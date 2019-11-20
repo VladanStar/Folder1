@@ -7,10 +7,26 @@
 		
 		</head>
 		<body>
-			<p>Pozdrav GitHub</p>
 			
+			<p id="ovaj">Prvi paragraf.</p>
+			<p>Drugi paragraf.</p>
+			
+			<button onclick="promeniParagraf();">
+				Promeni
+			</button>
+			
+			<script>
+				function promeniParagraf(){
+					let paragraf = document.querySelector('#ovaj');
+					
+					paragraf.innerHTML = 'Neki drugi tekst';
+					paragraf.style.color = 'red';
+					paragraf.style.fontSize = '45px';
+				}
+			
+			</script>
 		
 		</body>
-		<script src="main0302.js"></script>
+		
 
 	</html>
